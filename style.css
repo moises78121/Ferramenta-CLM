@@ -1,0 +1,88 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: monospace;
+	font-size: 1.5vw;
+}
+
+.prescription-table, .prescription-table__header, .prescription-table__data, .prescription-table__header--checkbox, .prescription-table__data--checkbox {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.prescription-table {
+	color: red;
+	width: 95vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5vw;
+}
+
+.prescription-table__header, .prescription-table__data {
+	height: 3vw;
+}
+
+.prescription-table__header--checkbox, .prescription-table__data--checkbox {
+	width: 5%;
+}
+
+.prescription-table__header {
+	color: blue;
+}
+
+.prescription-table__header--checkbox {
+	text-align: center;
+}
+
+.prescription-table__copy-button {
+	width: 100%;
+	height: 100%;
+	border: none;
+	background-color: #FFFFFF;
+}
+
+.prescription-table__copy-button:hover {
+	background-color: #DDDDDD;
+}
+
+.prescription-table__copy-button:active {
+	background-color: #999999;
+}
+
+.prescription-table__data {
+	color: green;
+}
+
+.prescription-table__data--checkbox {
+	text-align: center;
+}
+
+.prescription-table__data--description {
+	text-align: left;
+	padding-left: 1vw;
+	width: 40%;
+}
+
+.prescription-table__data--interval {
+	text-align: center;
+	width: 13%;
+}
+
+.prescription-table__data--route {
+	text-align: center;
+	width: 7%;
+}
+
+.prescription-table__data--times {
+	text-align: center;
+	white-space: pre;
+}
+
+.prescription-table__interval-select {
+	font-size: 100%;
+}
+
+.prescription-table__input-checkbox {
+	width: 50%;
+	height: 50%;
+}
