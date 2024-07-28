@@ -35,10 +35,10 @@ function exportPrescription() {
 	});
 
 	// Generate final string
-	var index = 1;
+	//var index = 1;
 	var prescriptionString = "";
 	prescriptionList.forEach((row) => {
-		prescriptionString += index.toString() + "\t";
+		//prescriptionString += index.toString() + "\t";
 		prescriptionString += row.childNodes[3].innerText + "\t";
 
 		if(row.childNodes[5].childNodes[1] != null) prescriptionString += row.childNodes[5].childNodes[1].value + "\t";
@@ -49,7 +49,7 @@ function exportPrescription() {
 
 		prescriptionString += row.childNodes[9].innerText + "\n";
 
-		index++;
+		//index++;
 	});
 
 	// Copy string to clipboard
