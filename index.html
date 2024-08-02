@@ -39,6 +39,38 @@
 		</tr>
 
 		<tr>
+			<td class="prescription-table__data prescription-table__data--checkbox"><input type="checkbox" class="prescription-table__input-checkbox"></td>
+			<td class="prescription-table__data prescription-table__data--description">DIETA BRANDA</td>
+			<td class="prescription-table__data prescription-table__data--interval">COPA</td>
+			<td class="prescription-table__data prescription-table__data--route">VO</td>
+			<td class="prescription-table__data prescription-table__data--times"></td>
+		</tr>
+
+		<tr>
+			<td class="prescription-table__data prescription-table__data--checkbox"><input type="checkbox" class="prescription-table__input-checkbox"></td>
+			<td class="prescription-table__data prescription-table__data--description">DIETA LIQUIDA RESTRITIVA</td>
+			<td class="prescription-table__data prescription-table__data--interval">COPA</td>
+			<td class="prescription-table__data prescription-table__data--route">VO</td>
+			<td class="prescription-table__data prescription-table__data--times"></td>
+		</tr>
+
+		<tr>
+			<td class="prescription-table__data prescription-table__data--checkbox"><input type="checkbox" class="prescription-table__input-checkbox"></td>
+			<td class="prescription-table__data prescription-table__data--description">DIETA LAXATIVA</td>
+			<td class="prescription-table__data prescription-table__data--interval">COPA</td>
+			<td class="prescription-table__data prescription-table__data--route">VO</td>
+			<td class="prescription-table__data prescription-table__data--times"></td>
+		</tr>
+
+		<tr>
+			<td class="prescription-table__data prescription-table__data--checkbox"><input type="checkbox" class="prescription-table__input-checkbox"></td>
+			<td class="prescription-table__data prescription-table__data--description">DIETA LIVRE</td>
+			<td class="prescription-table__data prescription-table__data--interval">COPA</td>
+			<td class="prescription-table__data prescription-table__data--route">VO</td>
+			<td class="prescription-table__data prescription-table__data--times"></td>
+		</tr>
+
+		<tr>
 			<th class="prescription-table__header prescription-table__header--checkbox"></th>
 			<th class="prescription-table__header">PRESCRIÇÃO DE MEDICAMENTOS</th>
 			<th class="prescription-table__header">INTERVALO</th>
@@ -51,11 +83,16 @@
 			<td class="prescription-table__data prescription-table__data--description">CEFTRIAXONA 1G + SF 0,9% 100 ML</td>
 			<td class="prescription-table__data  prescription-table__data--interval">
 				<select class="prescription-table__interval-select" onchange="setIntervalTimes(this.parentElement.parentElement, this.value)">
+					<option value="02/02H">02/02H</option>
 					<option value="04/04H">04/04H</option>
 					<option value="06/06H">06/06H</option>
 					<option value="08/08H">08/08H</option>
 					<option value="12/12H" selected>12/12H</option>
 					<option value="24/24H">24/24H</option>
+					<option value="ACM">ACM</option>
+					<option value="SOS">SOS</option>
+					<option value="08/08Ḥ">3x/dia</option>
+					<option value="12/12Ḥ">2x/dia</option>
 				</select>
 			</td>
 			<td class="prescription-table__data prescription-table__data--route">
@@ -67,19 +104,24 @@
 					<option value="INL">INL</option>
 				</select>
 			</td>
-			<td class="prescription-table__data prescription-table__data--times">06                            18</td>
+			<td class="prescription-table__data prescription-table__data--times">06              18</td>
 		</tr>
 
 		<tr>
 			<td class="prescription-table__data prescription-table__data--checkbox"><input type="checkbox" class="prescription-table__input-checkbox"></td>
-			<td class="prescription-table__data prescription-table__data--description">DIPIRONA (500 MG/ML - 2 ML) 01 AMP + AD</td>
+			<td class="prescription-table__data prescription-table__data--description">OMEPRAZOL (40 MG/AMP) 01 AMP</td>
 			<td class="prescription-table__data prescription-table__data--interval">
 				<select class="prescription-table__interval-select" onchange="setIntervalTimes(this.parentElement.parentElement, this.value)">
+					<option value="02/02H">02/02H</option>
 					<option value="04/04H">04/04H</option>
-					<option value="06/06H" selected>06/06H</option>
+					<option value="06/06H">06/06H</option>
 					<option value="08/08H">08/08H</option>
-					<option value="12/12H">12/12H</option>
+					<option value="12/12H" selected>12/12H</option>
 					<option value="24/24H">24/24H</option>
+					<option value="ACM">ACM</option>
+					<option value="SOS">SOS</option>
+					<option value="08/08Ḥ">3x/dia</option>
+					<option value="12/12Ḥ">2x/dia</option>
 				</select>
 			</td>
 			<td class="prescription-table__data prescription-table__data--route">
@@ -96,14 +138,19 @@
 
 		<tr>
 			<td class="prescription-table__data prescription-table__data--checkbox"><input type="checkbox" class="prescription-table__input-checkbox"></td>
-			<td class="prescription-table__data prescription-table__data--description">BROMOPRIDA (5 MG/ML - 2 ML) 01 AMP + AD 10 ML</td>
+			<td class="prescription-table__data prescription-table__data--description prescription-table__data--red">DIPIRONA (500 MG/ML - 2 ML) 01 AMP + AD</td>
 			<td class="prescription-table__data prescription-table__data--interval">
 				<select class="prescription-table__interval-select" onchange="setIntervalTimes(this.parentElement.parentElement, this.value)">
+					<option value="02/02H">02/02H</option>
 					<option value="04/04H">04/04H</option>
-					<option value="06/06H">06/06H</option>
-					<option value="08/08H" selected>08/08H</option>
+					<option value="06/06H" selected>06/06H</option>
+					<option value="08/08H">08/08H</option>
 					<option value="12/12H">12/12H</option>
 					<option value="24/24H">24/24H</option>
+					<option value="ACM">ACM</option>
+					<option value="SOS">SOS</option>
+					<option value="08/08Ḥ">3x/dia</option>
+					<option value="12/12Ḥ">2x/dia</option>
 				</select>
 			</td>
 			<td class="prescription-table__data prescription-table__data--route">
@@ -115,7 +162,181 @@
 					<option value="INL">INL</option>
 				</select>
 			</td>
-			<td class="prescription-table__data prescription-table__data--times">12             20             04</td>
+			<td class="prescription-table__data prescription-table__data--times prescription-table__data--red">12        18        24        06</td>
+		</tr>
+
+		<tr>
+			<td class="prescription-table__data prescription-table__data--checkbox"><input type="checkbox" class="prescription-table__input-checkbox"></td>
+			<td class="prescription-table__data prescription-table__data--description prescription-table__data--red">ONDANSETRONA (2 MG/ML - 2 ML) 01 AMP + SF 0,9% 100 ML</td>
+			<td class="prescription-table__data prescription-table__data--interval">
+				<select class="prescription-table__interval-select" onchange="setIntervalTimes(this.parentElement.parentElement, this.value)">
+					<option value="02/02H">02/02H</option>
+					<option value="04/04H">04/04H</option>
+					<option value="06/06H">06/06H</option>
+					<option value="08/08H" selected>08/08H</option>
+					<option value="12/12H">12/12H</option>
+					<option value="24/24H">24/24H</option>
+					<option value="ACM">ACM</option>
+					<option value="SOS">SOS</option>
+					<option value="08/08Ḥ">3x/dia</option>
+					<option value="12/12Ḥ">2x/dia</option>
+				</select>
+			</td>
+			<td class="prescription-table__data prescription-table__data--route">
+				<select>
+					<option value="VO">VO</option>
+					<option value="SNE">SNE</option>
+					<option value="SC">SC</option>
+					<option value="EV" selected>EV</option>
+					<option value="INL">INL</option>
+				</select>
+			</td>
+			<td class="prescription-table__data prescription-table__data--times prescription-table__data--red">12             20             04</td>
+		</tr>
+
+		<tr>
+			<td class="prescription-table__data prescription-table__data--checkbox"><input type="checkbox" class="prescription-table__input-checkbox"></td>
+			<td class="prescription-table__data prescription-table__data--description prescription-table__data--red">BROMOPRIDA (5 MG/ML - 2 ML) 01 AMP + AD 10 ML</td>
+			<td class="prescription-table__data prescription-table__data--interval">
+				<select class="prescription-table__interval-select" onchange="setIntervalTimes(this.parentElement.parentElement, this.value)">
+					<option value="02/02H">02/02H</option>
+					<option value="04/04H">04/04H</option>
+					<option value="06/06H">06/06H</option>
+					<option value="08/08H" selected>08/08H</option>
+					<option value="12/12H">12/12H</option>
+					<option value="24/24H">24/24H</option>
+					<option value="ACM">ACM</option>
+					<option value="SOS">SOS</option>
+					<option value="08/08Ḥ">3x/dia</option>
+					<option value="12/12Ḥ">2x/dia</option>
+				</select>
+			</td>
+			<td class="prescription-table__data prescription-table__data--route">
+				<select>
+					<option value="VO">VO</option>
+					<option value="SNE">SNE</option>
+					<option value="SC">SC</option>
+					<option value="EV" selected>EV</option>
+					<option value="INL">INL</option>
+				</select>
+			</td>
+			<td class="prescription-table__data prescription-table__data--times prescription-table__data--red">12             20             04</td>
+		</tr>
+
+		<tr>
+			<td class="prescription-table__data prescription-table__data--checkbox"><input type="checkbox" class="prescription-table__input-checkbox"></td>
+			<td class="prescription-table__data prescription-table__data--description prescription-table__data--blue">DIPIRONA 500 MG - 02 CP</td>
+			<td class="prescription-table__data prescription-table__data--interval">
+				<select class="prescription-table__interval-select" onchange="setIntervalTimes(this.parentElement.parentElement, this.value)">
+					<option value="02/02H">02/02H</option>
+					<option value="04/04H">04/04H</option>
+					<option value="06/06H" selected>06/06H</option>
+					<option value="08/08H">08/08H</option>
+					<option value="12/12H">12/12H</option>
+					<option value="24/24H">24/24H</option>
+					<option value="ACM">ACM</option>
+					<option value="SOS">SOS</option>
+					<option value="08/08Ḥ">3x/dia</option>
+					<option value="12/12Ḥ">2x/dia</option>
+				</select>
+			</td>
+			<td class="prescription-table__data prescription-table__data--route">
+				<select>
+					<option value="VO" selected>VO</option>
+					<option value="SNE">SNE</option>
+					<option value="SC">SC</option>
+					<option value="EV">EV</option>
+					<option value="INL">INL</option>
+				</select>
+			</td>
+			<td class="prescription-table__data prescription-table__data--times prescription-table__data--blue">12        18        24        06</td>
+		</tr>
+
+		<tr>
+			<td class="prescription-table__data prescription-table__data--checkbox"><input type="checkbox" class="prescription-table__input-checkbox"></td>
+			<td class="prescription-table__data prescription-table__data--description prescription-table__data--blue">ONDANSETRONA 4 MG - 01 CP</td>
+			<td class="prescription-table__data prescription-table__data--interval">
+				<select class="prescription-table__interval-select" onchange="setIntervalTimes(this.parentElement.parentElement, this.value)">
+					<option value="02/02H">02/02H</option>
+					<option value="04/04H">04/04H</option>
+					<option value="06/06H">06/06H</option>
+					<option value="08/08H" selected>08/08H</option>
+					<option value="12/12H">12/12H</option>
+					<option value="24/24H">24/24H</option>
+					<option value="ACM">ACM</option>
+					<option value="SOS">SOS</option>
+					<option value="08/08Ḥ">3x/dia</option>
+					<option value="12/12Ḥ">2x/dia</option>
+				</select>
+			</td>
+			<td class="prescription-table__data prescription-table__data--route">
+				<select>
+					<option value="VO" selected>VO</option>
+					<option value="SNE">SNE</option>
+					<option value="SC">SC</option>
+					<option value="EV">EV</option>
+					<option value="INL">INL</option>
+				</select>
+			</td>
+			<td class="prescription-table__data prescription-table__data--times prescription-table__data--blue">12             20             04</td>
+		</tr>
+
+		<tr>
+			<td class="prescription-table__data prescription-table__data--checkbox"><input type="checkbox" class="prescription-table__input-checkbox"></td>
+			<td class="prescription-table__data prescription-table__data--description prescription-table__data--blue">BROMOPRIDA (4 MG/ML) - 2,5 ML</td>
+			<td class="prescription-table__data prescription-table__data--interval">
+				<select class="prescription-table__interval-select" onchange="setIntervalTimes(this.parentElement.parentElement, this.value)">
+					<option value="02/02H">02/02H</option>
+					<option value="04/04H">04/04H</option>
+					<option value="06/06H">06/06H</option>
+					<option value="08/08H" selected>08/08H</option>
+					<option value="12/12H">12/12H</option>
+					<option value="24/24H">24/24H</option>
+					<option value="ACM">ACM</option>
+					<option value="SOS">SOS</option>
+					<option value="08/08Ḥ">3x/dia</option>
+					<option value="12/12Ḥ">2x/dia</option>
+				</select>
+			</td>
+			<td class="prescription-table__data prescription-table__data--route">
+				<select>
+					<option value="VO" selected>VO</option>
+					<option value="SNE">SNE</option>
+					<option value="SC">SC</option>
+					<option value="EV">EV</option>
+					<option value="INL">INL</option>
+				</select>
+			</td>
+			<td class="prescription-table__data prescription-table__data--times prescription-table__data--blue">12             20             04</td>
+		</tr>
+
+		<tr>
+			<td class="prescription-table__data prescription-table__data--checkbox"><input type="checkbox" class="prescription-table__input-checkbox"></td>
+			<td class="prescription-table__data prescription-table__data--description prescription-table__data--blue">PARACETAMOL 750 MG - 01 CP</td>
+			<td class="prescription-table__data prescription-table__data--interval">
+				<select class="prescription-table__interval-select" onchange="setIntervalTimes(this.parentElement.parentElement, this.value)">
+					<option value="02/02H">02/02H</option>
+					<option value="04/04H">04/04H</option>
+					<option value="06/06H" selected>06/06H</option>
+					<option value="08/08H">08/08H</option>
+					<option value="12/12H">12/12H</option>
+					<option value="24/24H">24/24H</option>
+					<option value="ACM">ACM</option>
+					<option value="SOS">SOS</option>
+					<option value="08/08Ḥ">3x/dia</option>
+					<option value="12/12Ḥ">2x/dia</option>
+				</select>
+			</td>
+			<td class="prescription-table__data prescription-table__data--route">
+				<select>
+					<option value="VO" selected>VO</option>
+					<option value="SNE">SNE</option>
+					<option value="SC">SC</option>
+					<option value="EV">EV</option>
+					<option value="INL">INL</option>
+				</select>
+			</td>
+			<td class="prescription-table__data prescription-table__data--times prescription-table__data--blue">12        18        24        06</td>
 		</tr>
 
 		<tr>
@@ -132,6 +353,30 @@
 			<td class="prescription-table__data prescription-table__data--interval">PROTOCOLO</td>
 			<td class="prescription-table__data prescription-table__data--route">EV</td>
 			<td class="prescription-table__data prescription-table__data--times"></td>
+		</tr>
+
+		<tr>
+			<th class="prescription-table__header prescription-table__header--checkbox"></th>
+			<th class="prescription-table__header">PRESCRIÇÃO DE CUIDADOS, PROCEDIMENTOS E EXAMES</th>
+			<th class="prescription-table__header">INTERVALO</th>
+			<th class="prescription-table__header">VIA</th>
+			<th class="prescription-table__header">HORÁRIO</th>
+		</tr>
+
+		<tr>
+			<td class="prescription-table__data prescription-table__data--checkbox"><input type="checkbox" class="prescription-table__input-checkbox"></td>
+			<td class="prescription-table__data prescription-table__data--description">SSVV + CCGG</td>
+			<td class="prescription-table__data prescription-table__data--interval">06/06H</td>
+			<td class="prescription-table__data prescription-table__data--route">―</td>
+			<td class="prescription-table__data prescription-table__data--times">13        19        23        07</td>
+		</tr>
+
+		<tr>
+			<td class="prescription-table__data prescription-table__data--checkbox"><input type="checkbox" class="prescription-table__input-checkbox"></td>
+			<td class="prescription-table__data prescription-table__data--description">HGT</td>
+			<td class="prescription-table__data prescription-table__data--interval">06/06H</td>
+			<td class="prescription-table__data prescription-table__data--route">―</td>
+			<td class="prescription-table__data prescription-table__data--times">18        24        06        12</td>
 		</tr>
 	</table>
 

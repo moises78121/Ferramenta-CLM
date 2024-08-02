@@ -2,7 +2,7 @@
 	padding: 0;
 	margin: 0;
 	font-family: monospace;
-	font-size: 1.5vw;
+	font-size: 1.2vw;
 }
 
 .prescription-table, .prescription-table__header, .prescription-table__data, .prescription-table__header--checkbox, .prescription-table__data--checkbox {
@@ -27,7 +27,7 @@
 }
 
 .prescription-table__header {
-	color: blue;
+	color: black;
 }
 
 .prescription-table__copy-button {
@@ -47,6 +47,14 @@
 
 .prescription-table__data {
 	color: green;
+}
+
+.prescription-table__data--red {
+	color: red;
+}
+
+.prescription-table__data--blue {
+	color: blue;
 }
 
 .prescription-table__data--description {

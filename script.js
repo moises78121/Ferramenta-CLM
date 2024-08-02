@@ -2,6 +2,9 @@ function setIntervalTimes(parent, value) {
 	parent.childNodes.forEach((item) => {
 		if((item.classList != null) && (item.classList.contains("prescription-table__data--times"))) {
 			switch(value) {
+				case "02/02H":
+					item.innerText = "14-16-18-22-24-02-04-06-08-10";
+					break;
 				case "04/04H":
 					item.innerText = "12    16    20    24    04    08";
 					break;
@@ -12,10 +15,19 @@ function setIntervalTimes(parent, value) {
 					item.innerText = "12             20             04";
 					break;
 				case "12/12H":
-					item.innerText = "06                            18";
+					item.innerText = "06              18";
 					break;
 				case "24/24H":
 					item.innerText = "06";
+					break;
+				case "08/08Ḥ":
+					item.innerText = "20             12             06";
+					break;
+				case "12/12Ḥ":
+					item.innerText = "20              12";
+					break;
+				default:
+					item.innerText = "";
 					break;
 			}
 		}
